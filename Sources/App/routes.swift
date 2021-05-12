@@ -7,5 +7,12 @@ func routes(_ app: Application) throws {
 
     app.get("hello") { req -> String in
         return "Hello, world!"
+        
     }
+        // http
+        app.get("movies","genre","comedy")
+        {
+            req in return "/the great khali"
+        }
+    
 }
